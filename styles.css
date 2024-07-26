@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(238, 226, 222);
+    color: #2B2A4C;
+}
+
+.ext-settings{
+    display: flex;
+    flex-direction: column;
+}
+
+.ext-settings-int{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+}

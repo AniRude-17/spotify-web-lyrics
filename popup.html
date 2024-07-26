@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spotify Lyrics</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h2>Manual Input</h2>
+  <input id="artistInput" type="text" placeholder="Enter artist here...">
+  <input id="songInput" type="text" placeholder="Enter song here...">
+  <button id="submitButton">Get Lyrics</button>
+  <h3>Lyrics Source : Lyrics OVH API</h3>
+
+  <div id="ext-settings">
+    <h2>Settings</h2>
+      <input type="checkbox" id="builtin-div">Use Builtin Div for Lyrics</input>
+      <br>
+      <input type="checkbox" id="new-div">Create New Div</input> 
+  </div>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

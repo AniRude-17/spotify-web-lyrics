@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Spotify Web Lyrics",
+  "version": "1.0",
+  "description": "Lyrics for Spotify Web Player",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://open.spotify.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
