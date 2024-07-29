@@ -76,3 +76,13 @@ function fetchAndInsert(lyrics) {
 
   return insertLyrics(lyrics);
 }
+
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+  if (changeInfo.status === 'complete' && tab.url === 'https://open.spotify.com/lyrics') {
+    chrome.scripting.executeScript({
+      target: {tabId: tabId},
+      function: fetchAndInsert,
+      args:["\n\n\n\n---- TEMPORARY LYRICS ---"]
+    });
+  }
+});
